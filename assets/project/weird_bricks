@@ -1,0 +1,103 @@
+Tilemancer 0.2.1
+
+Color 170 142 95
+Color 0 0 0
+PaletteSave1 
+PaletteSave2 
+FileSave1 \lua\proj\luacraft\assets\project
+FileSave2 weird_bricks
+Indexed 0
+Size 16
+Camera -859.726 94.6207
+Node {
+Name bricks.lua
+Position 301.522 117.605
+Parameter 26 -1 -1 0
+Parameter 1 1 -1 0
+Parameter 1 1 -1 0
+Parameter 1 1 -1 0
+Parameter 0 0 100 0
+Parameter 100 0 -1 0
+}
+Node {
+Name perlin_noise.lua
+Position 312.041 330.69
+Parameter -875 -1 -1 0
+Parameter 5 2 -1 0
+Parameter 6 1 -1 0
+Parameter 164 100 -1 0
+Parameter 80 0 100 0
+Parameter 16 0 -1 0
+}
+Node {
+Name blend.lua
+Position 499.478 140.698
+Parameter 1 0 5 0
+Parameter 100 0 100 0
+Connection 0 0 0
+Connection 1 1 0
+}
+Node {
+Name cells.lua
+Position 491.781 356.59
+Parameter 0 -1 -1 0
+Parameter 3 2 -1 0
+Parameter 25 0 100 0
+Parameter 40 0 -1 0
+}
+Node {
+Name blend.lua
+Position 660.566 254.413
+Parameter 5 0 5 0
+Parameter 100 0 100 0
+Connection 0 2 0
+Connection 1 3 0
+}
+Node {
+Name colorizer.lua
+Position 1174.4 -24.5516
+Ramp {
+Point 0 0 0.536585 0.683333
+}
+Parameter 0 0 0 0
+Parameter 0 0 0 0
+Parameter 0 0.536585 0.683333 0
+}
+Node {
+Name blend.lua
+Position 1387.77 53.36
+Parameter 2 0 5 0
+Parameter 93 0 100 0
+Connection 0 5 0
+Connection 1 10 0
+}
+Node {
+Name invert.lua
+Position 803.141 272.04
+Connection 0 4 0
+}
+Node {
+Name bricks.lua
+Position 864.137 -125.946
+Parameter 0 -1 -1 0
+Parameter 3 1 -1 0
+Parameter 2 1 -1 0
+Parameter 1 1 -1 0
+Parameter 50 0 100 0
+Parameter 100 0 -1 0
+}
+Node {
+Name lighting.lua
+Position 967.717 -132.75
+Parameter -22 -1 -1 0
+Parameter 10 0 100 0
+Connection 0 8 0
+}
+Node {
+Name blend.lua
+Position 1165.77 186.807
+Parameter 0 0 5 0
+Parameter 100 0 100 0
+Connection 0 9 0
+Connection 1 7 0
+}

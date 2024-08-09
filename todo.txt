@@ -1,0 +1,38 @@
+=====================
+==ENGINE
+=====================
+Delete old chunks from memory (and save them)
+Make the queue in the chunk remeshing actually a queue
+There's a leak or smth when you play on 10 render distance (30% cpu all the time too)
+Make a dynamic atlas
+Put world generation on a thread
+
+=====================
+==RENDERING
+=====================
++ Make faces get culled inbetween chunk transitions
++ Remesh a chunk when a block right next to it gets destroyed but is in another chunk
++ Threaded chunk remeshing
+Ambient occlusion
+Bottom faces of a block are rotated. Fix
+Colored lightning engine
+A way to add custom block render types as data 
+
+=====================
+==WORLD GEN
+=====================
+Threaded chunk gen so it doesn't stall when one is generated
+When a chunk is getting threaded gen, make the user unable to move in it?¿
+stuff
+
+=====================
+==CONTENT
+=====================
+Orientable stairs
+Proper slabs
+Colored grass
+
+=====================
+==BUG FIXES
+=====================
+Fix orientation

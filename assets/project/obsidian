@@ -1,0 +1,59 @@
+Tilemancer 0.2.1
+
+Color 16 13 43
+PaletteSave1 
+PaletteSave2 
+FileSave1 \lua\proj\luacraft\assets\project
+FileSave2 obsidian
+Indexed 0
+Size 16
+Camera -275.089 188.437
+Node {
+Name perlin_noise.lua
+Position 270 122.5
+Parameter -146 -1 -1 0
+Parameter 4 2 -1 0
+Parameter 6 1 -1 0
+Parameter 200 100 -1 0
+Parameter 80 0 100 0
+Parameter 56 0 -1 0
+}
+Node {
+Name blend.lua
+Position 450.97 -32.4062
+Parameter 1 0 5 0
+Parameter 100 0 100 0
+Connection 0 2 0
+Connection 1 0 0
+}
+Node {
+Name cells.lua
+Position 220.239 -94.7067
+Parameter 3 -1 -1 0
+Parameter 2 2 -1 0
+Parameter 24 0 100 0
+Parameter 113 0 -1 0
+}
+Node {
+Name colorizer.lua
+Position 564.233 95.3274
+Ramp {
+Point 0 0 0 1
+}
+Parameter 0 0 0 0
+Parameter 0 0 0 0
+Parameter 0 0 1 0
+}
+Node {
+Name blend.lua
+Position 710.283 -64.6973
+Parameter 2 0 5 0
+Parameter 100 0 100 0
+Connection 0 5 0
+Connection 1 3 0
+}
+Node {
+Name invert.lua
+Position 606.583 -99.3613
+Connection 0 1 0
+}

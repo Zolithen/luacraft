@@ -1,0 +1,57 @@
+Tilemancer 0.2.1
+
+Color 78 110 229
+Color 0 0 0
+PaletteSave1 
+PaletteSave2 
+FileSave1 \lua\proj\luacraft\assets\project
+FileSave2 water_bricks
+Indexed 0
+Size 16
+Camera -160.089 205.423
+Node {
+Name perlin_noise.lua
+Position 270 115.409
+Parameter -409 -1 -1 0
+Parameter 6 2 -1 0
+Parameter 6 1 -1 0
+Parameter 200 100 -1 0
+Parameter 80 0 100 0
+Parameter 30 0 -1 0
+}
+Node {
+Name blend.lua
+Position 498.452 12.4243
+Parameter 1 0 5 0
+Parameter 100 0 100 0
+Connection 0 2 0
+Connection 1 0 0
+}
+Node {
+Name bricks.lua
+Position 300.694 -114.222
+Parameter 13 -1 -1 0
+Parameter 2 1 -1 0
+Parameter 1 1 -1 0
+Parameter 1 1 -1 0
+Parameter 52 0 100 0
+Parameter 101 0 -1 0
+}
+Node {
+Name blend.lua
+Position 651.762 -75.6071
+Parameter 1 0 5 0
+Parameter 63 0 100 0
+Connection 0 4 0
+Connection 1 1 0
+}
+Node {
+Name colorizer.lua
+Position 511.304 -178.05
+Ramp {
+Point 0 0 0 1
+}
+Parameter 0 0 0 0
+Parameter 0 0 0 0
+Parameter 0 0 1 0
+}

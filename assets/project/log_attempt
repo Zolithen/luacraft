@@ -1,0 +1,77 @@
+Tilemancer 0.2.1
+
+Color 104 76 12
+PaletteSave1 
+PaletteSave2 
+FileSave1 \lua\proj\luacraft\assets\project
+FileSave2 log_attempt
+Indexed 0
+Size 16
+Camera -899.26 -27.1012
+Node {
+Name bricks.lua
+Position 350 122.5
+Parameter 0 -1 -1 0
+Parameter 8 1 -1 0
+Parameter 1 1 -1 0
+Parameter 1 1 -1 0
+Parameter 50 0 100 0
+Parameter 100 0 -1 0
+}
+Node {
+Name directional_blur.lua
+Position 476.502 121.223
+Parameter 90 -1 -1 0
+Parameter 52 0 100 0
+Connection 0 0 0
+}
+Node {
+Name lighting.lua
+Position 690.95 8.05337
+Parameter -22 -1 -1 0
+Parameter 10 0 100 0
+Connection 0 1 0
+}
+Node {
+Name colorizer.lua
+Position 875.177 0.229153
+Ramp {
+Point 0 0 0 1
+}
+Parameter 0 0 0 0
+Parameter 0 0 0 0
+Parameter 0 0 1 0
+}
+Node {
+Name blend.lua
+Position 1022.46 91.0099
+Parameter 2 0 5 0
+Parameter 65 0 100 0
+Connection 0 3 0
+Connection 1 2 2
+}
+Node {
+Name directional_warp.lua
+Position 1149.44 61.3915
+Parameter 37 -1 -1 0
+Parameter 6 0 100 0
+Connection 0 4 0
+}
+Node {
+Name perlin_noise.lua
+Position 1124.09 264.075
+Parameter -461 -1 -1 0
+Parameter 5 2 -1 0
+Parameter 5 1 -1 0
+Parameter 200 100 -1 0
+Parameter 80 0 100 0
+Parameter 16 0 -1 0
+}
+Node {
+Name blend.lua
+Position 1358.74 179.371
+Parameter 1 0 5 0
+Parameter 100 0 100 0
+Connection 0 5 0
+Connection 1 6 0
+}

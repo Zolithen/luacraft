@@ -1,0 +1,4 @@
+consecutive in chunk to cartesian in chunk 
+local x = i % 16;
+local z = math.floor(i/256);
+local y = math.floor(((i-z*256))/16);

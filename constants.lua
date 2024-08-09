@@ -13,7 +13,7 @@ FACING_XMINUS = 4
 FACING_YPLUS = 5
 FACING_YMINUS = 6
 
-RENDER_DISTANCE = 6;
+RENDER_DISTANCE = 2;
 -- Comes from doing algebra on ((2r+1)^3 - 1)/2. To turn cartesian relative coordinates to consecutive relative coordinates when rendering chunks
 RENDER_DISTANCE_INDEX = 4*RENDER_DISTANCE^3 + 6*RENDER_DISTANCE^2 + 3*RENDER_DISTANCE
 
